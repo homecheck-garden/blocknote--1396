@@ -1,0 +1,72 @@
+.react-flow__header-controls-border {
+    border-color :  #d4d4d4;
+
+}
+.react-flow__header-controls {
+    background: transparent;
+    border : none;
+    backdrop-filter: blur(8px);
+}
+.react-flow__preview-controls {
+    border-radius: 4px;
+    background: #f0f0f099;
+    backdrop-filter: blur(4px);
+
+}
+
+.react-flow__preview-controls {
+    border : 1px solid #d4d4d4;
+
+}
+.react-flow__preview-controls > .react-flow__minimap{
+    position: static;
+    margin: 0;
+}
+
+.react-flow__zoom-controls {
+
+    display: flex;
+    align-items: center;
+    gap : 0.2rem;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+
+.react-flow__zoom-controls > .scale {
+    width: 50px;
+    text-align: center;
+    letter-spacing: -0.5px;
+    user-select: none;
+    color : #171717;
+}
+
+.react-flow__resize-control.line.right,
+.react-flow__resize-control.line.left {
+    width: 4px !important;
+    border-width: 0 !important;
+}
+.react-flow__resize-control.line.top,
+.react-flow__resize-control.line.bottom {
+    height: 4px !important;
+    border-width: 0 !important;
+}
+.react-flow__resize-control.line.right:after,
+.react-flow__resize-control.line.left:after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 4px;
+    left: 2px;
+    top: 0;
+    background: #0064FF !important;
+}
+.react-flow__resize-control.line.bottom:after,
+.react-flow__resize-control.line.top:after {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    left: 0;
+    top: 2px;
+    background: #0064FF !important;
+}
